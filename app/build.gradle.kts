@@ -5,17 +5,17 @@ plugins {
 }
 
 android {
-    compileSdk = Apps.compileSdk
-    buildToolsVersion = Apps.buildToolsVersion
+    compileSdk = AppConfig.compileSdk
+    buildToolsVersion = AppConfig.buildToolsVersion
 
     defaultConfig {
         applicationId = "com.gregkluska.quizapp"
-        minSdk = Apps.minSdk
-        targetSdk = Apps.targetSdk
-        versionCode = Apps.versionCode
-        versionName = Apps.versionName
+        minSdk = AppConfig.minSdk
+        targetSdk = AppConfig.targetSdk
+        versionCode = AppConfig.versionCode
+        versionName = AppConfig.versionName
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = AppConfig.androidTestInstrumentation
     }
 
     buildTypes {
@@ -42,7 +42,7 @@ android {
 }
 
 dependencies {
-    implementation(Libs.kotlin)
-    implementation(Libs.appcompat)
-    testImplementation(TestLibs.junit)
+    implementation(AppDependencies.appLibraries)
+    testImplementation(AppDependencies.testLibraries)
+    androidTestImplementation(AppDependencies.androidTestLibraries)
 }
