@@ -3,14 +3,10 @@ object Versions {
     //app level
     const val gradle = "7.1.0-alpha01"
     const val kotlin = "1.5.0"
+    const val hilt_version = "2.35"
 
-    //libs
-    val coreKtx = "1.2.0"
-    val appcompat = "1.3.0"
-    val constraintLayout = "2.0.0-beta8"
+    const val retrofit = "2.9.0"
+    const val leak_canary = "2.7"
 
-    //test
-    val junit = "4.13.2"
-    val extJunit = "1.1.1"
-    val espresso = "3.2.0"
+    const val junit_jupiter = "5.7.0"
 }

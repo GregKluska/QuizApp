@@ -42,7 +42,8 @@ android {
 }
 
 dependencies {
-    implementation(AppDependencies.appLibraries)
-    testImplementation(AppDependencies.testLibraries)
-    androidTestImplementation(AppDependencies.androidTestLibraries)
+    implementation(Dependencies.appLibraries)
+    kapt(Dependencies.appKaptLibraries)
+    testImplementation(Dependencies.testLibraries)
+    androidTestImplementation(Dependencies.androidTestLibraries)
 }
